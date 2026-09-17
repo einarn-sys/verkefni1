@@ -30,7 +30,9 @@
             formið hér að neðan.
         </p>
 
-        <form>
+        <form action="mailto:ein4@hi.is" method="post" enctype="text/plain">
+            <fieldset>
+    <legend>Persónuupplýsingar</legend>
             <p>
                 <label for="nafn">Nafn:</label>
                 <input type="text" id="nafn" name="nafn">
@@ -45,6 +47,89 @@
                 <label for="simanumer">Símanúmer:</label>
                 <input type="tel" id="simanumer" name="simanumer">
             </p>
+            </fieldset>
+            <fieldset>
+    <legend>Ferð</legend>
+                <p>
+    <label for="ferd">Hvaða ferð vilt þú fá að vita meira um?</label>
+    <select id="ferd" name="ferd">
+        <option value="">Veldu ferð</option>
+        <option value="joklaklifur">Jöklaklifur</option>
+        <option value="gonguferd">Róleg gönguferð á Suðurlandi</option>
+        <option value="gullhringurinn">Gullhringurinn</option>
+        <option value="silfurkassinn">Silfurkassinn</option>
+        <option value="brons">Bronsþríhyrningurinn</option>
+        <option value="kofunarferd">Köfunarferð</option>
+        <option value="nordurljos">Norðurljósaferð</option>
+        <option value="reykjavik">Reykjavíkurferð</option>
+    </select>
+</p>
+
+</fieldset>
+
+<fieldset>
+    <legend>Hópur</legend>
+
+    <p>
+        <label for="fjoldi">Fjöldi í hóp:</label>
+        <input type="number" id="fjoldi" name="fjoldi" min="0">
+    </p>
+
+    <p>
+        <label for="upplysingar">Upplýsingar um hóp:</label>
+        <textarea id="upplysingar" name="upplysingar"></textarea>
+    </p>
+
+    <p>
+        <label for="tengilidur">Netfang tengiliðar:</label>
+        <input type="email" id="tengilidur" name="tengilidur">
+    </p>
+
+    <p>
+<label for="hopur-simi">Símanúmer:</label>
+    <input type="tel" id="hopur-simi" name="hopur-simi">
+
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Dagsetning og tími</legend>
+
+    <p>
+       <label for="dagsetning">Hvenær vilt þú bóka?</label>
+    <input type="date" id="dagsetning" name="dagsetning">
+
+
+    </p>
+
+    <p>Hvaða tíma?</p>
+
+    <p>
+        <input type="radio" id="fyrir-hadegi"
+               name="timi" value="fyrir-hadegi" checked>
+        <label for="fyrir-hadegi">Fyrir hádegi</label>
+
+        <input type="radio" id="kvold"
+               name="timi" value="kvold">
+        <label for="kvold">Kvöld</label>
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Bóka</legend>
+
+    <p>
+        <input type="checkbox" id="skilmalar"
+               name="skilmalar" required>
+        <label for="skilmalar">Samþykkja skilmála</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="gjafabref"
+               name="gjafabref">
+        <label for="gjafabref">Já takk, gjafabréf</label>
+    </p>
+</fieldset>
 
             <p>
                 <label for="skilabod">Skilaboð:</label>
@@ -55,9 +140,36 @@
         </form>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Ferðafyrirtæki. All rights reserved.</p>
-    </footer>
+<footer>
+    <section>
+        <h2>Opnunartímar</h2>
+
+        <h3>Skrifstofur</h3>
+        <p>Mánudaga til föstudaga: 12:00–18:00</p>
+        <p>Laugardagar: 14:00–16:00</p>
+        <p>Sunnudagar: Lokað</p>
+    </section>
+
+    <section>
+        <h3>Samfélagsmiðlar</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Hafðu samband</h2>
+        <ul>
+            <li>Ferðaþjónustufyrirtækið</li>
+            <li>Ferðagata 1</li>
+            <li>101 Reykjavík</li>
+            <li>Sími 234-2345</li>
+            <li>ferdathjonustufyrirtaekid@example.org</li>
+        </ul>
+    </section>
+</footer>
 
 </body>
 </html>
